@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+:root{
+--cor-de-fundo: #20006f;
+--botao-ativo: #5d21a5;
+--botao-inativo: #5c21a586;
+--rosa: #ea2ffb;
+--cinza: #ecedf8;
+--texto-de-fundo: #5c21a548;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--cinza);
+    font-family: "Kode Mono", monospace;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.objetivo-principal{
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+}
+
+.objetivo-principal spam{
+color: var(--rosa);
+}
