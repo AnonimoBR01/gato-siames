@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+:root{
+--cor-de-fundo: #0e002e;
+--botao-ativo: #60319b;
+--botao-inativo: #5c21a586;
+--rosa: #ea2ffb;
+--cinza: #ecedf8;
+--texto-de-fundo: #5c21a548;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--cinza);
+    font-family: "Kode Mono", monospace;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.objetivo-principal{
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+}
+
+.objetivo-principal span{
+color: var(--rosa);
+}
+
+.botao{
+    font-family: "Kode Mone", monospace;
+    background-color: var(--botao-inativo);
+    color: var(--cinza);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 4px solid var(--botao-ativo);
+    border-right: 4px solid var(--botao-ativo);
+    border-top: none;
+}
+.botao:first-child{
+    border-radius: 40px 0 0 0;
+}
+
+.botao:last-child{
+    border-radius: 0 0 40px 0;
+}
+
+.botoes{
+    display: block;
+
+    
+}
+
+.ativo{
+    
+}
+
+@media screen and (min-width: 768px){
+    .botoes{
+        display: flex;
+    }
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child{
+        border-radius: 0 0 40px 0;
+    }
+}
